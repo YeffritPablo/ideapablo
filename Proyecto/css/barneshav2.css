@@ -170,6 +170,7 @@ footer {
     text-align: justify;
     padding: 10px;
     margin: 60px; 
+    transform: rotate(5deg);
 }
 
 .content-mila {
@@ -184,6 +185,7 @@ footer {
     text-align: justify;
     padding: 10px;
     margin: 60px; 
+    transform: rotate(-5deg)
 }
 
 .content-empanadas {
@@ -198,6 +200,7 @@ footer {
     text-align: justify;
     padding: 10px;
     margin: 60px; 
+    transform: rotate(5deg);
 }
 
 .content-ajidegallina {
@@ -226,7 +229,8 @@ footer {
 .card-agua {
     margin: 10px;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 400px;
+    transform: rotate(5deg)
 }
 
 .content-agua {
@@ -242,7 +246,8 @@ footer {
 .card-cocacola {
     margin: 10px;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 400px;
+    transform: rotate(-5deg)
 }
 
 .content-coca {
@@ -429,11 +434,6 @@ footer {
  }
  
 
-.prueba:hover {
-    height: 500px; width: 300px;
-    padding: 20px;
-    margin: 20px;
-}
 
 /*======Aplicando Media Queries=======*/
 
