@@ -19,7 +19,7 @@ body {
 }   
 
 /*header*/
-header {
+/*header {
     grid-area: header;
     background-color: rgb(53, 53, 53);
     display: flex;
@@ -59,7 +59,7 @@ nav ul li a:hover {
 
 /*main*/
 
-main {
+/*main {
     grid-area: main;
 }
 
@@ -139,7 +139,7 @@ footer {
 
 /* CARTA */
 
-.carta {
+/*.carta {
     display: grid;
     grid-template-rows: repeat(2,1fr);
     margin-top: 30px;
@@ -263,7 +263,7 @@ footer {
 
 /*Sobre Nosotros*/ 
 
-.sobre {
+/*.sobre {
     grid-template-columns: repeat(9,1fr);
     display: grid;
 }
@@ -317,7 +317,7 @@ footer {
 
 /*Pagina de Reservas*/
 
-.main-reserva {
+/*.main-reserva {
     grid-template-columns: repeat(12,1fr);
 }
 
@@ -383,7 +383,7 @@ footer {
 
 /*pagina de Contacto*/
 
-.main-contact {
+/*.main-contact {
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
@@ -398,7 +398,7 @@ footer {
 
 /*Pagina de Suscribirse*/
 
-.main-suscripcion {
+/*.main-suscripcion {
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
