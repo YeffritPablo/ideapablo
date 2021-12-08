@@ -15,131 +15,35 @@ body {
     "footer"
     ;
     grid-gap: 40px;
-    min-height: 100vh;
 }   
 
 /*header*/
-/*header {
+header {
     grid-area: header;
-    background-color: rgb(53, 53, 53);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: solid rgb(0, 0, 0) 2px;
 }
 
-.header-lyt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-left: 10px;
-}
-
-nav{
-    padding: 10px;
-    background: rgb(51, 51, 51);
-    margin: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a{
-    padding: 0 15px;
-    margin: 0 5px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: rgb(255, 136, 0);
-}
 
 /*main*/
 
-/*main {
+main {
     grid-area: main;
 }
-
-.inicio {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-}
-
-.bienvenida {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/6;
-}
-
-.bienvenida-titulo {
-    color: orange ;
-    font-size: 60px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.bienvenida-text {
-    text-align: justify;
-    margin-top: 40px;
-    padding: 20px;
-}
-
-.section-inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 6/10;
-}
-
-.imag-bar {
-    
-    display: flex;
-    justify-content: center;
-    height: 70%;
-    width: 80%;
-}
-
-
+/*footer*/
 footer {
     grid-area: footer;
-    background-color: rgb(17, 0, 95);
 }
 
-.footer-pag {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+footer {
+    background-color: rgb(0, 15, 151);
 }
 
-.footer-contact {
-    padding: 10px;
+.pie{
+    color: yellow;
 }
-
-.pie {
-    font-size: initial;
-    color: rgb(255, 218, 7);
-}
-
-.redes {
-    right: 0;
-    height: 10%;
-    padding-right: 10px;
-}
-
-.redes a {
-    padding: 5px;
-}
-
 
 /* CARTA */
 
-/*.carta {
+.carta {
     display: grid;
     grid-template-rows: repeat(2,1fr);
     margin-top: 30px;
@@ -263,7 +167,7 @@ footer {
 
 /*Sobre Nosotros*/ 
 
-/*.sobre {
+.sobre {
     grid-template-columns: repeat(9,1fr);
     display: grid;
 }
@@ -317,7 +221,7 @@ footer {
 
 /*Pagina de Reservas*/
 
-/*.main-reserva {
+.main-reserva {
     grid-template-columns: repeat(12,1fr);
 }
 
@@ -383,7 +287,7 @@ footer {
 
 /*pagina de Contacto*/
 
-/*.main-contact {
+.main-contact {
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
@@ -398,7 +302,7 @@ footer {
 
 /*Pagina de Suscribirse*/
 
-/*.main-suscripcion {
+.main-suscripcion {
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
