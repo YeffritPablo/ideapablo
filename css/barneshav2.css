@@ -4,17 +4,14 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
-    position: relative;
     background-color: rgb(241, 241, 241);
     display: grid;
     grid-template-areas: 
-    "header "
-    "main "
-    "main "
-    "main "
+    "header"
+    "main"
     "footer"
     ;
-    grid-gap: 40px;
+    grid-gap: 50px;
 }   
 
 /*header*/
@@ -35,6 +32,8 @@ footer {
 
 footer {
     background-color: rgb(0, 15, 151);
+    border: blue solid;
+    margin-top: 150px;
 }
 
 
@@ -43,127 +42,6 @@ footer {
 }
 
 /* CARTA */
-
-.carta {
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    margin-top: 30px;
-}
-
-.main-titulo {
-    position: absolute;
-    color: rgb(129, 0, 0);
-    display: inline-block;
-    right: 50%;
-}
-
-.Comida {
-    grid-row: 1;
-    display: inline-block;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.comida-titulo {
-    margin-bottom: 10px;
-}
-
-.card-mila {
-   justify-content: center;
-    border: rgb(41, 41, 41) solid ;
-    text-align: justify;
-    padding: 10px;
-    margin: 60px; 
-    transform: rotate(5deg);
-}
-
-.content-mila {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.card-empanadas {
-    border: rgb(41, 41, 41) solid ;
-    text-align: justify;
-    padding: 10px;
-    margin: 60px; 
-    transform: rotate(-5deg)
-}
-
-.content-empanadas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.card-ajidegallina {
-    border: rgb(41, 41, 41) solid ;
-    text-align: justify;
-    padding: 10px;
-    margin: 60px; 
-    transform: rotate(5deg);
-}
-
-.content-ajidegallina {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px
-}
-
-.bebidas {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    grid-row: 2;
-    margin-top: 80px;
-    padding-top: 20px;
-}
-
-.bebidas h3 {
-    position: absolute;
-    left: 0%;
-    margin-bottom: 10px;
-}
-
-.card-agua {
-    margin: 10px;
-    min-width: 300px;
-    max-width: 400px;
-    transform: rotate(5deg)
-}
-
-.content-agua {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: rgb(41, 41, 41) solid ;
-    padding: 10px;
-    text-align: justify;
-    gap: 10px;
-}
-
-.card-cocacola {
-    margin: 10px;
-    min-width: 300px;
-    max-width: 400px;
-    transform: rotate(-5deg)
-}
-
-.content-coca {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: justify;
-    border: rgb(41, 41, 41) solid ;
-    padding: 10px;
-    gap: 10px;
-}
 
 
 /*Sobre Nosotros*/ 
@@ -225,12 +103,13 @@ footer {
 .main-reserva {
     grid-template-columns: repeat(12,1fr);
 }
-
 .reservas {
     grid-template-columns: repeat(12,1fr);
     grid-column: 1/-1;
 }
-
+.titulo-tabla{
+    margin-right: 20px;
+}
 .reservas h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -273,11 +152,11 @@ footer {
 }
 
 .tabla-botones {
-    grid-column: 3/5;
+    grid-column: 3;
     grid-row: 3;
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 15px;
 }
 
