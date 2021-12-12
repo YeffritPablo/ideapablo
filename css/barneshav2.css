@@ -18,8 +18,22 @@ body {
 header {
     grid-area: header;
 }
+.nav-link {
+    color: rgb(136, 0, 0) !important; 
+}
 
+.nav-link:hover {
+    color: rgb(255, 255, 255) !important;
+}
 
+.nav-back {
+    background-color: #ffc107;
+}
+
+header nav {
+    color: blueviolet;
+    border-bottom: black solid;
+}
 /*main*/
 
 main {
@@ -33,7 +47,7 @@ footer {
 footer {
     background-color: rgb(0, 15, 151);
     border: blue solid;
-    margin-top: 150px;
+    margin-top: 10px;
 }
 
 
@@ -46,177 +60,21 @@ footer {
 
 /*Sobre Nosotros*/ 
 
-.sobre {
-    grid-template-columns: repeat(9,1fr);
-    display: grid;
-}
-.main-sobre {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-column: 2/9;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-.main-sobre .sobre-text {
-    grid-column: 1/9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.sobre-text h2 {
-    margin-bottom: 40px;
-}
-
-.sobre-text p {
-    text-align: justify;
-}
-
-
-.sobre-imagen {
-    grid-column: 1/3;
-    text-align: center;
-}
-
-.sobre-imagen .imag-nesha {
-    width: 100%;
-    height: 80%;
-    margin-top: 20px;
-}
-
-.section-video {
-    grid-column: 4/8;
-    text-align: center;
-}
-
-.section-video iframe {
-    margin-top: 10px;
-    width: 100%;
-}
 
 
 /*Pagina de Reservas*/
 
-.main-reserva {
-    grid-template-columns: repeat(12,1fr);
-}
-.reservas {
-    grid-template-columns: repeat(12,1fr);
-    grid-column: 1/-1;
-}
-.titulo-tabla{
-    margin-right: 20px;
-}
-.reservas h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.reservas form {
-    height: 90%;
-    
-}
-
-.tabla-reserva {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(3,1fr);
-    height: 100%;
-}
-
-.tabla-nombre {
-    grid-column: 2/3;
-    grid-row: 1;
-}
-
-.tabla-apellido {
-    grid-column: 4/5;
-    grid-row: 1;
-}
-
-.tabla-personas {
-    grid-column: 2/3;
-    grid-row: 2;
-}
-
-.tabla-telefono {
-    grid-column: 4/5;
-    grid-row: 2;
-}
-
-.tabla-email {
-    grid-column: 2/3;
-    grid-row: 3;
-}
-
-.tabla-botones {
-    grid-column: 3;
-    grid-row: 3;
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    margin-top: 15px;
-}
-
-.tabla-botones input {
-    background-color: rgb(0, 50, 189);
-    color: snow;
-}
 
 /*pagina de Contacto*/
 
-.main-contact {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-}
-
-.contact {
-    grid-column: 2/6;
-}
-
-.contact h2 {
-    text-align: center;
-} 
 
 /*Pagina de Suscribirse*/
-
-.main-suscripcion {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
+.texto-sub {
+    text-align: justify !important;
 }
 
-.suscripcion {
-    grid-column: 2/6;
-    position: relative;
-}
 
-.prueba {
-    background-color: rgb(0, 255, 0);
-    position: absolute;
-    padding: 10px;
-    margin-top: 20px;
-    animation-name: un_efecto;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    text-align: center;
-    text-align: justify;
-    max-height: 15px;
-    max-width: 230px;
-}
-
-@keyframes un_efecto {
-    25%{ transform: translate(300px, 30px); }
-    30%{ background-color:brown ;}
-    50%{  background-color: rgb(196, 7, 0);
-    transform: translate(500px, 60px); }
-    75%{ transform: translate(550px, 0);}
-    100%{background-color:rgb(255, 208, 0);}
- }
- 
 
 
 /*======Aplicando Media Queries=======*/
@@ -224,142 +82,16 @@ footer {
 @media screen and (max-width: 768px) {
     /*header*/
 
-    nav ul li {
-        /*display: block;*/
-        margin-top: 5px;
-        margin-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-    }
     
     /*main*/
-    .bienvenida {
-        display: flex;
-        flex-direction: column;
-        grid-column: 1/6;
-    }
-    main {
-        grid-area: main;
-    }
-    
-    .inicio {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(9,1fr);
-    }
-    
-    .bienvenida-titulo {
-        font-size: 2em;
-        margin-top: 20px;
-    }
-    
-    .bienvenida-text {
-        text-align: justify;
-        font-size: 1em;
-        margin-top: 30px;
-        padding: 20px;
-    }
-    .imag-bar {
-        max-width: 300px;
-        max-height: 170px;
-    }
-
 
     /*carta*/
-    .carta {
-        margin-top: 30px;
-    }
-    
-    .main-titulo {
-        color: rgb(129, 0, 0);
-        right: 50%;
-        top: 6%;
-        position: absolute;
-    }
-    
-    .Comida {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .comida-titulo {
-        margin-bottom: 10px;
-    }
-    .titulo-bebidas {
-        position: absolute;
-        top: 15%;
-    }
-    .bebidas {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 15px;
-        align-items: center;
-    }
-    .content-coca p {
-        max-width: 400px;
-    }
-    .card-agua {
-        margin: 10px;
-    }
-    
-    .content-agua {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        border: rgb(41, 41, 41) solid ;
-        padding: 10px;
-        text-align: justify;
-    }
 
-    .card-cocacola {
-        margin: 10px;
-    }
-    
-    .content-coca {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        text-align: justify;
-        border: rgb(41, 41, 41) solid ;
-        padding: 10px;
-    }
     
 
     /*Sobre nosotros*/
-    .sobre {
-        grid-template-columns: repeat(9,1fr);
-        display: grid;
-    }
-    .main-sobre {
-        display: flex;
-        flex-direction: column;
-    }
+
 
     /*subscripcion*/
-    .prueba {
-        background-color: rgb(0, 255, 0);
-        position: relative;
-        padding: 10px;
-        margin-top: 20px;
-        animation-name: un_efecto;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 5s;
-        animation-delay: 1s;
-        text-align: center;
-        text-align: justify;
-        max-height: 15px;
-        max-width: 230px;
-    }
-    
-    @keyframes un_efecto {
-        25%{ transform: translate(30px, 10px); }
-        30%{ background-color:brown ;}
-        50%{  background-color: rgb(196, 7, 0); }
-        100%{background-color:rgb(255, 208, 0);}
-     }
-}   
+
+}
