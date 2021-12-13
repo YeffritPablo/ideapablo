@@ -56,8 +56,23 @@ footer {
 }
 
 /* CARTA */
+.carta {
+    color: rgb(173, 4, 4);
+}
 
+.cards:hover {
+    border: rgb(175, 0, 0) solid;
+}
+.boton{
+    background-color: rgb(226, 192, 0);
+    color: rgb(173, 4, 4);
+    border: black solid 1px;
+}
 
+.boton:hover {
+    background-color: rgb(43, 144, 226);
+    color: black;
+}
 /*Sobre Nosotros*/ 
 
 
@@ -67,12 +82,38 @@ footer {
 
 
 /*pagina de Contacto*/
-
+.contact {
+    color: blue;
+}
 
 /*Pagina de Suscribirse*/
 .texto-sub {
     text-align: justify !important;
 }
+
+.animacion {
+    display: inline-block;
+    width: 130px;
+    background-color: green;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+@keyframes un_efecto {
+    25%{ transform: rotate(360deg);
+    }
+    50%{ transform: translatex(100px);
+      background-color: rgb(255, 115, 0); 
+      color: blanchedalmond;}
+      65%{ transform: translateX(-100px);
+    color: blue;}
+    75%{ transform: rotate(-360deg);}
+    100%{ 
+      background-color:rgb(255, 238, 0);}
+ }
+ 
 
 
 
@@ -93,5 +134,34 @@ footer {
 
 
     /*subscripcion*/
+    .animacion {
+        display: inline-block;
+        width: 130px;
+        color: black;
+        background-color: rgb(6, 247, 255);
+        animation-name: un_efecto;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 2s;
 
+      
+    }
+
+    .animation {
+        margin-top: 20px;
+    }
+
+    @keyframes un_efecto {
+        25%{ transform: rotate(100deg);
+        }
+        50%{ transform: translatex(75px);
+          background-color: rgb(255, 115, 0); 
+          color: blanchedalmond;}
+          65%{ transform: translateX(-75px);
+        color: blue;}
+        75%{ transform: rotate(-100deg);}
+        100%{ 
+          background-color:rgb(255, 238, 0);}
+     }
 }
