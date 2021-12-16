@@ -1,5 +1,35 @@
-@media screen and (min-width: 700px) {
-    a {
-        background-color: saddlebrown;
+
+/*======Aplicando Media Queries=======*/
+@media screen and (max-width: 768px) {
+/*subscripcion*/
+    .animacion {
+        display: inline-block;
+        width: 130px;
+        color: black;
+        background-color: rgb(6, 247, 255);
+        animation-name: un_efecto;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 2s;
+
+      
     }
+
+    .animation {
+        margin-top: 20px;
+    }
+
+    @keyframes un_efecto {
+        25%{ transform: rotate(100deg);
+        }
+        50%{ transform: translatex(75px);
+          background-color: rgb(255, 115, 0); 
+          color: blanchedalmond;}
+          65%{ transform: translateX(-75px);
+        color: blue;}
+        75%{ transform: rotate(-100deg);}
+        100%{ 
+          background-color:rgb(255, 238, 0);}
+     }
 }

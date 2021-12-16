@@ -1,13 +1,123 @@
-ul {
-  border: 0cm solid red; }
-  ul li {
-    background-color: royalblue; }
-    ul li a {
-      font-size: 100px; }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
-a {
-  background-color: royalblue; }
+body {
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-areas: 
+  "header"
+ "main"
+ "footer";
+  grid-gap: 50px; }
 
-@media screen and (min-width: 700px) {
-  a {
-    background-color: saddlebrown; } }
+header {
+  grid-area: header; }
+
+.nav-link {
+  color: #880000 !important; }
+
+.nav-link:hover {
+  color: white !important; }
+
+.nav-back {
+  background-color: #ffc107; }
+
+header nav {
+  color: blueviolet;
+  border-bottom: black solid; }
+
+main {
+  grid-area: main; }
+
+/* CARTA */
+.carta {
+  color: #ad0404; }
+
+.cards:hover {
+  border: #af0000 solid;
+  transform: translateY(10px); }
+
+.boton {
+  background-color: #e2c000;
+  color: #ad0404;
+  border: black solid 1px; }
+
+.boton:hover {
+  background-color: #2b90e2;
+  color: black; }
+
+/*pagina de Contacto*/
+.contact {
+  color: blue; }
+
+/*Pagina de Suscribirse*/
+.texto-sub {
+  text-align: justify !important; }
+
+.animacion {
+  display: inline-block;
+  width: 130px;
+  background-color: green;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 10s;
+  animation-delay: 2s; }
+
+@keyframes un_efecto {
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: translatex(100px);
+    background-color: #ff7300;
+    color: blanchedalmond; }
+  65% {
+    transform: translateX(-100px);
+    color: blue; }
+  75% {
+    transform: rotate(-360deg); }
+  100% {
+    background-color: #ffee00; } }
+
+footer {
+  grid-area: footer; }
+
+footer {
+  background-color: #000f97;
+  border: blue solid;
+  margin-top: 10px; }
+
+.pie {
+  color: yellow; }
+
+/*======Aplicando Media Queries=======*/
+@media screen and (max-width: 768px) {
+  /*subscripcion*/
+  .animacion {
+    display: inline-block;
+    width: 130px;
+    color: black;
+    background-color: #06f7ff;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 2s; }
+  .animation {
+    margin-top: 20px; }
+  @keyframes un_efecto {
+    25% {
+      transform: rotate(100deg); }
+    50% {
+      transform: translatex(75px);
+      background-color: #ff7300;
+      color: blanchedalmond; }
+    65% {
+      transform: translateX(-75px);
+      color: blue; }
+    75% {
+      transform: rotate(-100deg); }
+    100% {
+      background-color: #ffee00; } } }
