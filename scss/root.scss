@@ -1,0 +1,27 @@
+
+ul {
+    border: 0cm solid red ;
+    
+    li {
+        background-color: royalblue;
+        
+        a {
+            font-size: 100px;
+            
+        }
+    }
+}
+
+a {
+    background-color: royalblue;
+}
+
+@import "variables";
+@import "header";
+@import "nav";
+@import "main";
+@import "footer";
+@import "mediaqueries";
+
+
+
