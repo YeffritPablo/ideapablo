@@ -2,24 +2,36 @@ main {
     grid-area: main;
 
 }
+
+/* INICIO */
+div {
+    .texto-inicio {
+        text-align: justify;
+    }
+}
+
 /* CARTA */
 .carta {
     color: rgb(173, 4, 4);
+    margin-top: 10px;
+    width: 20%;
+    text-align: center;
 }
 
-.cards:hover {
+.cards {
+    width: 18rem;
+&:hover {
     border: rgb(175, 0, 0) solid;
-    transform: translateY(10px);
+    transform: translateY(10px);}
 }
-.boton{
+
+.boton {
     background-color: rgb(226, 192, 0);
     color: rgb(173, 4, 4);
     border: black solid 1px;
-}
-
-.boton:hover {
-    background-color: rgb(43, 144, 226);
-    color: black;
+    &:hover {  
+    background-color: rgb(226, 43, 43);
+    color: black;}
 }
 
 /*pagina de Contacto*/
@@ -42,15 +54,12 @@ main {
     animation-delay: 2s;
 }
 @keyframes un_efecto {
-    25%{ transform: rotate(360deg);
-    }
+    25%{ transform: rotate(360deg);}
     50%{ transform: translatex(100px);
       background-color: rgb(255, 115, 0); 
       color: blanchedalmond;}
       65%{ transform: translateX(-100px);
     color: blue;}
     75%{ transform: rotate(-360deg);}
-    100%{ 
-      background-color:rgb(255, 238, 0);}
+    100%{ background-color:rgb(255, 238, 0);}
  }
- 

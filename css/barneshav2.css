@@ -1,17 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
-body {
-  background-color: #f1f1f1;
-  display: grid;
-  grid-template-areas: 
-  "header"
- "main"
- "footer";
-  grid-gap: 50px; }
-
 header {
   grid-area: header; }
 
@@ -31,22 +17,30 @@ header nav {
 main {
   grid-area: main; }
 
+/* INICIO */
+div .texto-inicio {
+  text-align: justify; }
+
 /* CARTA */
 .carta {
-  color: #ad0404; }
+  color: #ad0404;
+  margin-top: 10px;
+  width: 20%;
+  text-align: center; }
 
-.cards:hover {
-  border: #af0000 solid;
-  transform: translateY(10px); }
+.cards {
+  width: 18rem; }
+  .cards:hover {
+    border: #af0000 solid;
+    transform: translateY(10px); }
 
 .boton {
   background-color: #e2c000;
   color: #ad0404;
   border: black solid 1px; }
-
-.boton:hover {
-  background-color: #2b90e2;
-  color: black; }
+  .boton:hover {
+    background-color: #e22b2b;
+    color: black; }
 
 /*pagina de Contacto*/
 .contact {
@@ -94,6 +88,9 @@ footer {
 
 /*======Aplicando Media Queries=======*/
 @media screen and (max-width: 768px) {
+  /* Carta */
+  section div .carousel-mod {
+    height: 500px; }
   /*subscripcion*/
   .animacion {
     display: inline-block;
@@ -121,3 +118,7 @@ footer {
       transform: rotate(-100deg); }
     100% {
       background-color: #ffee00; } } }
+
+@media screen and (max-width: 650px) {
+  .carta {
+    width: 30% !important; } }

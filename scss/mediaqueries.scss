@@ -1,6 +1,14 @@
 
 /*======Aplicando Media Queries=======*/
 @media screen and (max-width: 768px) {
+  /* Carta */ 
+  section {
+    div {
+      .carousel-mod {
+        height: 500px;
+      }
+    }
+  }
 /*subscripcion*/
     .animacion {
         display: inline-block;
@@ -32,4 +40,10 @@
         100%{ 
           background-color:rgb(255, 238, 0);}
      }
+}
+
+@media screen and (max-width: 650px) {
+  .carta {
+    width: 30% !important;
+  }
 }
