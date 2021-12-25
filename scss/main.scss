@@ -4,10 +4,21 @@ main {
 }
 
 /* INICIO */
+section {
+    .titulo-nesha {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
 div {
     .texto-inicio {
         text-align: justify;
     }
+}
+/*reservas*/
+.reservas {
+    margin-bottom: 80px;
 }
 
 /* CARTA */
@@ -17,6 +28,7 @@ div {
     width: 20%;
     text-align: center;
 }
+
 
 .cards {
     width: 18rem;
@@ -38,6 +50,7 @@ div {
 .contact {
     color: blue;
 }
+
 
 /*Pagina de Suscribirse*/
 .texto-sub {

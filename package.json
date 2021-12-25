@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/root.scss css/barneshav2.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-boostrap": "node-sass --include-path scss scss/boostrap/bootstrap.scss css/boostrap.css",
+    "watch-boostrap": "nodemon -e scss -x \"npm run build-boostrap\""
   },
+
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YeffritPablo/ideapablo.git"

@@ -3,23 +3,29 @@ header {
 
 .nav-link {
   color: #880000 !important; }
-
-.nav-link:hover {
-  color: white !important; }
+  .nav-link:hover {
+    color: white !important; }
 
 .nav-back {
   background-color: #ffc107; }
 
 header nav {
-  color: blueviolet;
   border-bottom: black solid; }
 
 main {
   grid-area: main; }
 
 /* INICIO */
+section .titulo-nesha {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
 div .texto-inicio {
   text-align: justify; }
+
+/*reservas*/
+.reservas {
+  margin-bottom: 80px; }
 
 /* CARTA */
 .carta {
@@ -81,16 +87,22 @@ footer {
 footer {
   background-color: #000f97;
   border: blue solid;
-  margin-top: 10px; }
-
-.pie {
-  color: yellow; }
+  margin-top: 60px; }
+  footer div div .pie {
+    color: yellow; }
 
 /*======Aplicando Media Queries=======*/
 @media screen and (max-width: 768px) {
   /* Carta */
   section div .carousel-mod {
     height: 500px; }
+  /* Reservas */
+  .texto-reserva {
+    width: 100% !important; }
+  .reservas form {
+    width: 95% !important; }
+  fieldset .personas {
+    width: 50% !important; }
   /*subscripcion*/
   .animacion {
     display: inline-block;
