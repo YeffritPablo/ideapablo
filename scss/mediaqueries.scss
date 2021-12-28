@@ -1,7 +1,7 @@
 
 /*======Aplicando Media Queries=======*/
 @media screen and (max-width: 768px) {
-  /* Carta */ 
+  /* Index */ 
   section {
     div {
       .carousel-mod {
@@ -62,8 +62,10 @@ fieldset {
      }
 }
 
+
 @media screen and (max-width: 650px) {
   .carta {
     width: 30% !important;
-  }
+    font-size: 22px;
+ }
 }

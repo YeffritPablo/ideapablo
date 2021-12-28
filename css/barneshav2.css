@@ -1,10 +1,62 @@
+/*variables*/
+/* Bucle*/
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 20px; }
+
+/* each */
+.back-color-red {
+  background-color: red; }
+
+.back-color-blue {
+  background-color: blue; }
+
+.back-color-grey {
+  background-color: grey; }
+
+.back-color-yellow {
+  background-color: yellow; }
+
+.back-color-green {
+  background-color: green; }
+
+.back-color-skyblue {
+  background-color: skyblue; }
+
+/* mapa */
+.red-facebook {
+  color: #3376c4; }
+
+.red-instagram {
+  color: #d72dee; }
+
+/* EXTEND*/
+.boton-secundario {
+  border: solid 2px black;
+  background-color: #ffc107;
+  color: #880000; }
+
+.boton-primario {
+  padding: 10px; }
+
+/* mixin */
+.boton, .boton-primario {
+  background-color: #ffc107;
+  color: #880000;
+  border: black solid 1px; }
+  .boton:hover, .boton-primario:hover {
+    background-color: #880000;
+    color: #ffc107; }
+
 header {
   grid-area: header; }
 
 .nav-link {
   color: #880000 !important; }
   .nav-link:hover {
-    color: white !important; }
+    color: black !important; }
 
 .nav-back {
   background-color: #ffc107; }
@@ -28,8 +80,13 @@ div .texto-inicio {
   margin-bottom: 80px; }
 
 /* CARTA */
+section .menu {
+  margin-left: 10px; }
+  section .menu button {
+    color: #880000 !important; }
+
 .carta {
-  color: #ad0404;
+  color: #880000;
   margin-top: 10px;
   width: 20%;
   text-align: center; }
@@ -37,20 +94,36 @@ div .texto-inicio {
 .cards {
   width: 18rem; }
   .cards:hover {
-    border: #af0000 solid;
-    transform: translateY(10px); }
+    border: #880000 solid 2px;
+    transform: translateY(5px); }
 
-.boton {
-  background-color: #e2c000;
-  color: #ad0404;
-  border: black solid 1px; }
-  .boton:hover {
-    background-color: #e22b2b;
-    color: black; }
+.card-body h5 {
+  text-align: center; }
 
+/*.boton {
+    background-color: rgb(226, 192, 0);
+    color: $bordo ;
+    border: black solid 1px;
+    &:hover {  
+    background-color: $bordo;
+    color: $amarillo;}
+}*/
 /*pagina de Contacto*/
 .contact {
   color: blue; }
+
+/* Pagina Nosotros */
+.main-nosotros {
+  margin-bottom: 100px; }
+  .main-nosotros .texto-nosotros {
+    text-align: center; }
+    .main-nosotros .texto-nosotros p {
+      text-align: justify; }
+  .main-nosotros section div div div {
+    display: flex;
+    justify-content: center; }
+  .main-nosotros section div div h2 {
+    text-align: center; }
 
 /*Pagina de Suscribirse*/
 .texto-sub {
@@ -59,6 +132,7 @@ div .texto-inicio {
 .animacion {
   display: inline-block;
   width: 130px;
+  margin-top: 15px;
   background-color: green;
   animation-name: un_efecto;
   animation-iteration-count: infinite;
@@ -91,9 +165,12 @@ footer {
   footer div div .pie {
     color: yellow; }
 
+footer div .redes {
+  align-self: center; }
+
 /*======Aplicando Media Queries=======*/
 @media screen and (max-width: 768px) {
-  /* Carta */
+  /* Index */
   section div .carousel-mod {
     height: 500px; }
   /* Reservas */
@@ -133,4 +210,5 @@ footer {
 
 @media screen and (max-width: 650px) {
   .carta {
-    width: 30% !important; } }
+    width: 30% !important;
+    font-size: 22px; } }

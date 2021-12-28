@@ -22,8 +22,16 @@ div {
 }
 
 /* CARTA */
+section{
+    .menu {
+        margin-left: 10px; 
+    button {
+        color: $bordo !important;
+    }
+    }
+}
 .carta {
-    color: rgb(173, 4, 4);
+    color: $bordo;
     margin-top: 10px;
     width: 20%;
     text-align: center;
@@ -33,24 +41,53 @@ div {
 .cards {
     width: 18rem;
 &:hover {
-    border: rgb(175, 0, 0) solid;
-    transform: translateY(10px);}
+    border: $bordo solid 2px;
+    transform: translateY(5px);}
 }
 
-.boton {
+.card-body {
+    h5 {
+        text-align: center;
+    }
+}
+/*.boton {
     background-color: rgb(226, 192, 0);
-    color: rgb(173, 4, 4);
+    color: $bordo ;
     border: black solid 1px;
     &:hover {  
-    background-color: rgb(226, 43, 43);
-    color: black;}
-}
+    background-color: $bordo;
+    color: $amarillo;}
+}*/
 
 /*pagina de Contacto*/
 .contact {
     color: blue;
 }
 
+/* Pagina Nosotros */
+.main-nosotros {
+    margin-bottom: 100px;
+    .texto-nosotros {
+        text-align: center;
+        p {
+            text-align: justify;
+        }
+    }
+
+    section {
+        div {
+            div {
+                div {
+                    display: flex;
+                    justify-content: center;
+                }
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 
 /*Pagina de Suscribirse*/
 .texto-sub {
@@ -59,6 +96,7 @@ div {
 .animacion {
     display: inline-block;
     width: 130px;
+    margin-top: 15px;
     background-color: green;
     animation-name: un_efecto;
     animation-iteration-count: infinite;

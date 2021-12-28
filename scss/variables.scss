@@ -1,0 +1,67 @@
+/*variables*/
+$amarillo: #ffc107 ;
+$bordo: #880000 ;
+$black: black;
+
+
+
+
+
+/* Bucle*/
+
+@for $a from 1 to 3 {
+    
+    h#{$a} {
+        font-size: 40px / $a; 
+    }
+}
+
+/* each */
+
+$lista-colores: red, blue, grey, yellow, green, skyblue;
+
+@each $color in $lista-colores {
+    .back-color-#{$color} {
+        background-color: $color;
+    }
+}
+
+/* mapa */
+$redes: (
+    facebook: #3376c4,
+    instagram: #d72dee,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+
+
+/* EXTEND*/
+.boton-secundario{
+    border: solid 2px black;
+    background-color: $amarillo;
+    color: $bordo;
+}
+
+.boton-primario {
+    @extend .boton;
+    padding: 10px;
+}
+
+/* mixin */
+
+@mixin boton {
+    background-color: $amarillo;
+    color: $bordo ;
+    border: black solid 1px;
+    &:hover {  
+    background-color: $bordo;
+    color: $amarillo;}
+}
+.boton {
+@include boton;
+}
