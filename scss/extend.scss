@@ -1,0 +1,11 @@
+/* EXTEND*/
+.boton-secundario{
+    border: solid 2px black;
+    background-color: $amarillo;
+    color: $bordo;
+}
+
+.boton-primario {
+    @extend .boton;
+    padding: 10px;
+}

@@ -18,7 +18,7 @@ div {
 }
 /*reservas*/
 .reservas {
-    margin-bottom: 80px;
+    margin-bottom: 93px;
 }
 
 /* CARTA */
@@ -50,14 +50,9 @@ section{
         text-align: center;
     }
 }
-/*.boton {
-    background-color: rgb(226, 192, 0);
-    color: $bordo ;
-    border: black solid 1px;
-    &:hover {  
-    background-color: $bordo;
-    color: $amarillo;}
-}*/
+.boton {
+    @include boton;
+    }
 
 /*pagina de Contacto*/
 .contact {
@@ -66,13 +61,14 @@ section{
 
 /* Pagina Nosotros */
 .main-nosotros {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     .texto-nosotros {
         text-align: center;
         p {
             text-align: justify;
         }
     }
+    
 
     section {
         div {
@@ -95,7 +91,7 @@ section{
 }
 .animacion {
     display: inline-block;
-    width: 130px;
+    width: 110px;
     margin-top: 15px;
     background-color: green;
     animation-name: un_efecto;

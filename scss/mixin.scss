@@ -1,0 +1,10 @@
+@mixin boton {
+    background-color: $amarillo;
+    color: $bordo ;
+    border: black solid 1px;
+    &:hover {  
+    background-color: $bordo;
+    color: $amarillo;}
+}
+
+
