@@ -26,11 +26,8 @@ h2 {
   background-color: skyblue; }
 
 /* mapa */
-.red-facebook {
-  background-color: #3376c4; }
-
-.red-instagram {
-  background-color: #d72dee; }
+.red-Contacto {
+  color: #ffe607; }
 
 /* EXTEND*/
 .boton-secundario {
@@ -153,8 +150,6 @@ footer {
   background-color: #000f97;
   border: blue solid;
   margin-top: 60px; }
-  footer div div .pie {
-    color: yellow; }
 
 footer div .redes {
   align-self: center; }
